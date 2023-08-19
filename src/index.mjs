@@ -28,7 +28,6 @@
 
 // const val3 = "const変数を再宣言";
 
-
 // constで定義したオブジェクトはプロパティの変更が可能
 // const val4 = {
 //     name: "neko",
@@ -45,14 +44,34 @@
 // console.log(val5);
 
 // テンプレート文字列
-const name = "猫";
-const age = "3";
-// 「吾輩は猫である。名前はまだない。歳は3歳だ。」
+// const name = "猫";
+// const age = "3";
+// // 「吾輩は猫である。名前はまだない。歳は3歳だ。」
 
-// 従来の方法
-// const message1 = "吾輩は" + name + "である。名前はまだない。歳は" + age + "だ。";
-// console.log(message1);
+// // 従来の方法
+// // const message1 = "吾輩は" + name + "である。名前はまだない。歳は" + age + "だ。";
+// // console.log(message1);
 
-// テンプレート文字列
-const message2 = `吾輩は${name}である。名前はまだない。歳は${age}だ。`;
-console.log(message2);
+// // テンプレート文字列
+// const message2 = `吾輩は${name}である。名前はまだない。歳は${age}だ。`;
+// console.log(message2);
+
+// アロー関数
+
+// 従来の関数
+// function func1(str) {
+//   return str;
+// }
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("thisFunc1"));
+
+// アロー関数
+const func2 = (str) => {
+  return str;
+};
+console.log(func2("This func2"));
+
+const func3 = (num1, num2) => num1 + num2;
+console.log(func3(10, 20));
